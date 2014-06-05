@@ -1,2 +1,13 @@
 Account: Admin
 Pass: 1qaz2wsx
+
+Face host: 
+<VirtualHost *>
+	DocumentRoot "F:\Project\xampp\htdocs\omedia\hongminh\hongminhbaby"
+	ServerName hongminhbaby.net
+	ServerAlias *.hongminhbaby.net
+	<Directory "F:\Project\xampp\htdocs\omedia\hongminh\hongminhbaby">
+		Order allow,deny
+		Allow from all
+	</Directory>
+</VirtualHost>
