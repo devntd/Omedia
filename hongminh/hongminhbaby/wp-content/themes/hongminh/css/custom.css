@@ -250,8 +250,8 @@ body {
 }
 
 #nav li a {
-  /*font-family: 'museo500'*/
-    font-family: 'Open Sans', sans-serif;
+  font-family: 'museo500'
+    /*font-family: 'Open Sans', sans-serif;*/
     font-size: 24px;
     color: #262626;
     text-decoration: none;
@@ -313,8 +313,8 @@ body {
 
 #nav li ul li a {
     background: none;
-    /*font-family: 'museo500';*/
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'museo500';
+    /*font-family: 'Open Sans', sans-serif;*/
     font-size: 18px;
     color: #262626;
     text-align: left;
@@ -388,8 +388,8 @@ body {
 }
 
 #banner .caption .text h1 {
-    /*font-family: 'museo700';*/
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'museo700';
+    /*font-family: 'Open Sans', sans-serif;*/
     font-size: 48px;
     color: #383838;
     margin: 0 0 20px 0;
