@@ -1,8 +1,12 @@
 Account: Admin
 Pass: 1qaz2wsx
 
-Quý
-Face host: 
+
+Face host:
+<VirtualHost *>
+	DocumentRoot "F:\Project\xampp\htdocs"
+	ServerName localhost
+</VirtualHost>
 <VirtualHost *>
 	DocumentRoot "F:\Project\xampp\htdocs\omedia\hongminh\hongminhbaby"
 	ServerName hongminhbaby.net
