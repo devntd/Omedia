@@ -12,35 +12,62 @@
  */
 
 get_header(); ?>
+<!--Banner Start-->
+<div class="" id="banner">
+    <div class="holder">
+        <div class="caption">
+            <div class="text">
+                <h1>Mùa Đông<span class="pink">Bộ Sưu Tập</span></h1>
 
-	<div id="primary" class="content-area">
-		<main id="main" class="site-main" role="main">
+                <p>Nullam ut lorem in arcu ornare available, but the<br>
+                    majority have suffered alteration.</p>
+                <strong class="price">$549.oo</strong> <a href="#" class="btn-now">Mua Ngay !</a></div>
+        </div>
+        <div class="banner-areo"><strong class="title">Một mùa hè sôi động hơn với những bộ trang phục in họa
+                tiết trái dứa.</strong></div>
+    </div>
+    <div id="featured" class="flexslider et_slider_auto et_slider_speed_4200">
+        <ul class="slides">
+            <li class="slide">
+                <div class="slider_image"><a href="#"><img
+                            src="<?php echo get_template_directory_uri(); ?>./images/banner-img-1.jpg"
+                            alt='img'/></a></div>
+            </li>
+            <li class="slide">
+                <div class="slider_image"><a href="#"><img
+                            src="<?php echo get_template_directory_uri(); ?>./images/banner-img-3.jpg"
+                            alt='img'/></a></div>
+            </li>
+            <li class="slide">
+                <div class="slider_image"><a href="#"><img
+                            src="<?php echo get_template_directory_uri(); ?>./images/banner-img-2.jpg"
+                            alt='img'/></a></div>
+            </li>
+        </ul>
+        <div id="switcher">
+            <div class="item">
+                <div class="wrap active"><span class="image"> <img
+                            src="<?php echo get_template_directory_uri(); ?>./images/banner-img-1-thumb.jpg"
+                            alt='img'/> </span>
+                </div>
+            </div>
+            <div class="item">
+                <div class="wrap "><span class="image"> <img
+                            src="<?php echo get_template_directory_uri(); ?>./images/banner-img-1-thumb-2.jpg"
+                            alt='img'/></span>
+                </div>
+            </div>
+            <div class="item">
+                <div class="wrap "><span class="image"> <img
+                            src="<?php echo get_template_directory_uri(); ?>./images/banner-img-1-thumb-3.jpg"
+                            alt='img'/></span>
+                </div>
+            </div>
+        </div>
+        <!-- #switcher -->
+    </div>
+</div>
+<!--Banner End-->
+    <div id="main">
 
-		<?php if ( have_posts() ) : ?>
-
-			<?php /* Start the Loop */ ?>
-			<?php while ( have_posts() ) : the_post(); ?>
-
-				<?php
-					/* Include the Post-Format-specific template for the content.
-					 * If you want to override this in a child theme, then include a file
-					 * called content-___.php (where ___ is the Post Format name) and that will be used instead.
-					 */
-					get_template_part( 'content', get_post_format() );
-				?>
-
-			<?php endwhile; ?>
-
-			<?php hongminh_paging_nav(); ?>
-
-		<?php else : ?>
-
-			<?php get_template_part( 'content', 'none' ); ?>
-
-		<?php endif; ?>
-
-		</main><!-- #main -->
-	</div><!-- #primary -->
-
-<?php get_sidebar(); ?>
 <?php get_footer(); ?>
